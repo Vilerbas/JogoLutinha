@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation ="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/player_score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pontuação do Jogador"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <ImageView
+        android:id="@+id/player_health_bar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/player_attack_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATACAR"
+        android:textSize="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+
+    <ImageView
+        android:id ="@+id/player_stick_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/enemy_stick_character"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/enemy_score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pontuação do Jogador"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"/>
+
+        <ImageView
+            android:id="@+id/enemy_health_bar"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@android:color/holo_red_light"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/enemy_attack_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ATACAR"
+            android:textSize="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+
+        <ImageView
+            android:id ="@+id/enemy_stick_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/enemy_stick_character"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
